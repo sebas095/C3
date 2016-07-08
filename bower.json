@@ -1,0 +1,21 @@
+{
+  "name": "C3",
+  "homepage": "https://github.com/sebas095/C3",
+  "authors": [
+    "Sebastian Duque Restrepo <sebas_tian_95@hotmail.com>"
+  ],
+  "description": "Probando libreria C3.js",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "c3": "^0.4.11"
+  }
+}

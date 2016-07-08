@@ -1,0 +1,25 @@
+.center {
+  text-align: center;
+}
+
+.position {
+  height: 70%;
+  width: 70%;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #5282E1;
+  color: #F7F7F7;
+  transition: all 300ms ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: #000;
+  background-color: rgba(34, 149, 213, 0.77);
+  cursor: pointer;
+}
