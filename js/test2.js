@@ -1,9 +1,11 @@
-var data = ['sample', random(0, 100)];
+var data1 = ['sample', random(0, 100)];
+var data2 = ['sample2', random(0, 100)];
+
 var chart = c3.generate({
   bindto: "#chart2",
   data: {
-    columns: [data]
-  }
+    columns: [data1, data2],
+  },
 });
 
 load(20);
@@ -15,11 +17,16 @@ function random(min, max) {
 function load(points) {
   if (points == 0) return;
   setTimeout(() => {
-    var point = random(0, 100);
-    data.push(point);
+    var point1 = random(0, 100);
+    var point2 = random(0, 100);
+
+    data1.push(point1);
+    data2.push(point2);
+
     chart.load({
-      columns: [data]
+      columns: [data1, data2]
     });
+    
     points--;
     load(points);
   }, 1000);
