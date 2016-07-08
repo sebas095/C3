@@ -1,4 +1,4 @@
-var data = ['sample', 33];
+var data = ['sample', random(0, 100)];
 var chart = c3.generate({
   bindto: "#chart2",
   data: {
